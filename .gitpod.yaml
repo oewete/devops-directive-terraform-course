@@ -5,8 +5,8 @@ image:
 tasks:
   - name: Initalise terraform
     init: |
-      export TERRAFORM_AWS_ACCESS_KEY_ID="$AWS_ACCESS_KEY_ID"
-      export TERRAFORM_AWS_SECRET_ACCESS_KEY="$AWS_SECRETS_ACCESS_KEY"
+      export TERRAFORM_AWS_ACCESS_KEY_ID="$TERRAFORM_AWS_ACCESS_KEY_ID"
+      export TERRAFORM_AWS_SECRET_ACCESS_KEY="$TERRAFORM_AWS_SECRETS_ACCESS_KEY"
       export TERRAFORM_AWS_DEFAULT_REGION="us-east-1"
     command: |
       terraform init
